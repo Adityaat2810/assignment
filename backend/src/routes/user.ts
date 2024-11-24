@@ -84,6 +84,7 @@ router.post('/register', async (req, res) => {
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = loginSchema.parse(req.body);
+    console.log(email,password)
 
     const user = await prisma.user.findUnique({ 
         where: { email } 
@@ -98,8 +99,9 @@ router.post('/login', async (req, res) => {
     }
 
     const token = jwt.sign({ userId: user.id }, JWT_SECRET!!, { expiresIn: '1h' });
+    console.log(`token is`,token)
 
-    res.json({ user: { id: user.id, email: user.email }, token });
+    res.status(201).json({ user: { id: user.id, email: user.email }, token });
   } catch (error) {
     if (error instanceof z.ZodError) {
       return res.status(400).json({ error: error.errors });
