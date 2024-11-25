@@ -1,3 +1,3 @@
 export const variables ={
-    baseUrl : 'http://localhost:3000'
+    baseUrl : 'https://assignment-1-jay4.onrender.com'
 }
