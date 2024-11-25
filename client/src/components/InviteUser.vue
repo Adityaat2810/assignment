@@ -48,8 +48,10 @@
 </template>
 
 <script setup>
+import axios from 'axios'
 import { ref } from 'vue'
 import { MailIcon, ShieldIcon, SendIcon, LoaderIcon, UserPlusIcon } from 'lucide-vue-next'
+import { variables } from '../lib/util.js'
 
 const emit = defineEmits(['invite-sent'])
 const email = ref('')
@@ -60,7 +62,26 @@ const handleSubmit = async () => {
   isLoading.value = true
   try {
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
+      const token = localStorage.getItem('authToken');
+    
+    if (!token) {
+      throw new Error('No authentication token found');
+    }
+
+    const config = {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      }
+    };
+
+    const response = await axios.post(
+      `${variables.baseUrl}/api/mail/invite`,
+      { email: email.value },
+      config
+    );
+    
+ 
     emit('invite-sent')
     email.value = ''
     role.value = 'user'
