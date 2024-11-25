@@ -19,7 +19,7 @@
             <p class="text-green-600 font-medium">Active Users</p>
             <ActivityIcon class="w-5 h-5 text-green-500" />
           </div>
-          <p class="text-3xl font-bold text-green-700">{{ activeUsers }}</p>
+          <p class="text-3xl font-bold text-green-700">{{ totalUsers }}</p>
           <p class="text-sm text-green-600 mt-2">Currently active</p>
         </div>
       </div>

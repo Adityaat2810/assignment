@@ -8,9 +8,9 @@
             <span class="text-xl font-bold">Admin Portal</span>
           </div>
           <div class="hidden md:flex space-x-4 ml-8">
-            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors">Dashboard</a>
-            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors">Users</a>
-            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors">Settings</a>
+            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors text-gray-200">Dashboard</a>
+            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors text-gray-200">Users</a>
+            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-700 transition-colors text-gray-200">Settings</a>
           </div>
         </div>
         <div class="flex items-center space-x-4">
