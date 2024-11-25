@@ -26,6 +26,17 @@ This project is a User Management System built with a **Node.js backend** using 
 - **API Documentation**:
   - Includes various endpoints for user registration, login, management, and invitations.
 
+## Screenshots
+
+![Screenshot from 2024-11-25 19-02-14](https://github.com/user-attachments/assets/12c8ea14-ee55-48be-8000-205a34eea841)
+
+![Screenshot from 2024-11-25 19-01-58](https://github.com/user-attachments/assets/d7b3d445-e7b3-4336-ab67-b3b0601dd3e3)
+
+![Screenshot from 2024-11-25 19-01-49](https://github.com/user-attachments/assets/ca01c469-3c62-4714-b1ed-944a39e3bff0)
+![Screenshot from 2024-11-25 19-00-29](https://github.com/user-attachments/assets/0bd753d2-ef56-42eb-9ce2-bbcbef16aa42)
+
+
+
 ## Technologies Used
 
 ### Backend
